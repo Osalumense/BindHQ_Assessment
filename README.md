@@ -8,10 +8,10 @@
 
 ## Setting up project
  To set up the project:
-    - Clone the repo
-    - Create the database
-    - Install project dependencies using `composer install`
-    - Run migrations using `php bin/console doctrine:migrations:migrate`
-    - Import the database using the sql file in the /DB folder
-    - Start the application using `symfony serve`
+ - Clone the repo
+ - Create the database
+ - Install project dependencies using `composer install`
+ - Run migrations using `php bin/console doctrine:migrations:migrate`
+ - Import the database using the sql file in the /DB folder
+ - Start the application using `symfony serve`
 
