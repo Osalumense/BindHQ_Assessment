@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insurance Companies</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.15/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 font-sans">
+    <div class="container mx-auto p-8">
+        <h1 class="text-3xl font-bold mb-6">Insurance Companies</h1>
+
+        <table class="w-full border-collapse border border-gray-300">
+            <thead>
+                <tr class="bg-gray-200">
+                    <th class="py-2 px-4 border border-gray-300">Company Name</th>
+                    <th class="py-2 px-4 border border-gray-300">Total Sales</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for company in companies %}
+                    <tr class="bg-white bg-gray-100">
+                        <td class="py-2 px-4 border border-gray-300">{{ company.companyName }}</td>
+                        <td class="py-2 px-4 border border-gray-300">{{ company.totalSales }}</td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
